@@ -18,13 +18,15 @@ result = json.loads(response.content.decode('utf-8'))
 print(json.dumps(result, indent=4, ensure_ascii=False))
 ```
 # paramsを使った複雑なデータ抽出
-paramsに記述できるパラメータ仕様は, X developer platform の[Fields](https://developer.twitter.com/en/docs/twitter-api/fields) 中の以下のリンクを辿ると詳細な説明がある。![image1](Fields.jpg)
+paramsに記述できるパラメータ仕様は, X developer platform の[Fields](https://developer.twitter.com/en/docs/twitter-api/fields) 中の以下のリンクを辿ると詳細な説明がある。![Fields](Fields.jpg)  
+[get_tweet_json_params.py](get_tweet_json_params.py)
+
 
 ``` python
 # 検索条件
 url = f'https://api.twitter.com/2/tweets/search/recent'
 # 認証
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAH4RsgEAAAAAx2phEmbAQtdV6DCRAaItUM7VN7E%3D7YGZbqdfY7zCncPyUy1qjCIqK7yxvHVxjIc13d0JU8ATfzPocP'
+bearer_token = ''
 headers = {'Authorization': f'Bearer {bearer_token}'}
 # API実行
 # paramsで抽出条件を細かく指定している。

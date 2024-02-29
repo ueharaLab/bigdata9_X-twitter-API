@@ -7,7 +7,7 @@ import urllib.parse
 # 検索条件
 url = f'https://api.twitter.com/2/tweets/search/recent'
 # 認証
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAH4RsgEAAAAAx2phEmbAQtdV6DCRAaItUM7VN7E%3D7YGZbqdfY7zCncPyUy1qjCIqK7yxvHVxjIc13d0JU8ATfzPocP'
+bearer_token = ''
 headers = {'Authorization': f'Bearer {bearer_token}'}
 # API実行
 # paramsで抽出条件を細かく指定している。

@@ -9,7 +9,7 @@ query = '一番搾り'
 url = f'https://api.twitter.com/2/tweets/search/recent?query={urllib.parse.quote(query)}'
 
 # 認証
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAH4RsgEAAAAAx2phEmbAQtdV6DCRAaItUM7VN7E%3D7YGZbqdfY7zCncPyUy1qjCIqK7yxvHVxjIc13d0JU8ATfzPocP'
+bearer_token = ''
 headers = {'Authorization': f'Bearer {bearer_token}'}
 # API実行
 response = requests.request('GET', url, headers=headers)
